@@ -1,0 +1,3 @@
+/cygdrive/c/Users/sebas/Desktop/Comp ARCH/BST_V1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/c/Users/sebas/Desktop/Comp ARCH/BST_V1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/c/Users/sebas/Desktop/Comp ARCH/BST_V1/cmake-build-debug/CMakeFiles/BST_V1.dir

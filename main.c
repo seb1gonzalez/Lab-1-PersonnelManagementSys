@@ -5,48 +5,71 @@
 
 #include <stdio.h>
 #include <malloc.h>
+#include <stdlib.h>
+
 //FUNCTIONS IN BST
 
 
 //general structure for BST
-struct Node {
+typedef struct Node {
     int value;
-    struct node *left, *right;
-};
+    struct Node *right;
+    struct Node *left;
+} Node;
 
 //function to create a Node for the BST
-struct Node* newNode(int value){
-    struct Node *temp = (struct Node*)malloc(sizeof(struct Node));
-    temp-> value = value;
-    temp->left = temp->right = NULL;
-    return temp;
+struct Node* newNode(int newVal){
+    Node *newNode= (Node*)malloc(sizeof(Node));
+    newNode->value = newVal;
+    newNode->left = NULL;
+    newNode->right = NULL;
+    return newNode;
 
-}
+};
+void inOrder(struct Node* root){
+    if(root != NULL){
+        inOrder(root->left);
+        printf("%d ",root->value);
+        inOrder(root->right);
+    }
+};
 
 // add an element to the Tree
 struct Node* add (struct Node* root, int value){
     //check ifEmpty
     if (root == NULL){
         root = newNode(value);
-        return root;
     }
-    //ERRORS IN THIS IF WITH "node"
-    //Error = "can't resolve variable"
-    //if not empty - sort the inserted value
-    if(value < node->value){
-        node->left = add(node->left,value);
+        //do nothing for duplicates
+    else if(root->value == value){}
+
+        //add left if less than
+    else if(value < root->value){
+        root->left = add(root->left,value);
     }
-};;
+        //add right if greater
+    else{
+        root->right = add(root->right,value);
+    }
+
+    return root;
+};
+
+
 
 //MAIN
 int main() {
 
     //make BS treeRoot empty or Null
-    struct Node* root = NULL;
+    Node *root = NULL;
+
+
 
     //start adding elements to tree using ADD function
-    add(root,50);
-    add (root, 40);
-    add(root,60);
+    root = add(root,40);
+    for(int i = 10 ; i < 110; i+=10) {
+        add(root, i);
+    }
+    inOrder(root);
     return 0;
 }

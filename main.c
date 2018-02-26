@@ -29,7 +29,11 @@ struct Node* newNode(int newVal){
 void inOrder(struct Node* root){
     if(root != NULL){
         inOrder(root->left);
+<<<<<<< HEAD
         printf("%d \n",root->value);
+=======
+        printf("%d ",root->value);
+>>>>>>> master
         inOrder(root->right);
     }
 };
@@ -40,10 +44,21 @@ struct Node* add (struct Node* root, int value){
     if (root == NULL){
         root = newNode(value);
     }
+<<<<<<< HEAD
     //add left if less than
     else if(value < root->value){
         root->left = add(root->left,value);
     }
+=======
+        //do nothing for duplicates
+    else if(root->value == value){}
+
+        //add left if less than
+    else if(value < root->value){
+        root->left = add(root->left,value);
+    }
+        //add right if greater
+>>>>>>> master
     else{
         root->right = add(root->right,value);
     }
@@ -62,10 +77,17 @@ int main() {
 
 
     //start adding elements to tree using ADD function
+<<<<<<< HEAD
     root = add(root,45);
     add(root,50);
     add (root, 40);
     add(root,60);
+=======
+    root = add(root,40);
+    for(int i = 10 ; i < 110; i+=10) {
+        add(root, i);
+    }
+>>>>>>> master
     inOrder(root);
     return 0;
 }

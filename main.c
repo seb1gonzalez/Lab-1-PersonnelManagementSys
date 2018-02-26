@@ -49,10 +49,6 @@ struct Node* add (struct Node* root, int value){
         //do nothing for duplicates
     else if(root->value == value){}
 
-        //add left if less than
-    else if(value < root->value){
-        root->left = add(root->left,value);
-    }
         //add right if greater
     else{
         root->right = add(root->right,value);

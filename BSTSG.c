@@ -1,7 +1,7 @@
 //CREATED BY SEBASTIAN GONZALEZ FEB 25,2018
 //time invested 2 hours, research www.tutorialspoint.com -> pointers, malloc, linked list
 // other resources JAVA BST, JAVA LinkedList
-// https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
+
 
 #include <stdio.h>
 #include <malloc.h>
@@ -41,7 +41,7 @@ struct Node* add (struct Node* root, int value){
         root = newNode(value);
     }
 
-    //add left if less than
+        //add left if less than
     else if(value < root->value){
         root->left = add(root->left,value);
     }

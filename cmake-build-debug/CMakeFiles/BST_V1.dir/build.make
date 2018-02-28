@@ -57,38 +57,38 @@ include CMakeFiles/BST_V1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/BST_V1.dir/flags.make
 
-CMakeFiles/BST_V1.dir/main.c.o: CMakeFiles/BST_V1.dir/flags.make
-CMakeFiles/BST_V1.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/sebas/Desktop/Comp ARCH/BST_V1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/BST_V1.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BST_V1.dir/main.c.o   -c "/cygdrive/c/Users/sebas/Desktop/Comp ARCH/BST_V1/main.c"
+CMakeFiles/BST_V1.dir/BSTSG.c.o: CMakeFiles/BST_V1.dir/flags.make
+CMakeFiles/BST_V1.dir/BSTSG.c.o: ../BSTSG.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/sebas/Desktop/Comp ARCH/BST_V1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/BST_V1.dir/BSTSG.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BST_V1.dir/BSTSG.c.o   -c "/cygdrive/c/Users/sebas/Desktop/Comp ARCH/BST_V1/BSTSG.c"
 
-CMakeFiles/BST_V1.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BST_V1.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/c/Users/sebas/Desktop/Comp ARCH/BST_V1/main.c" > CMakeFiles/BST_V1.dir/main.c.i
+CMakeFiles/BST_V1.dir/BSTSG.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BST_V1.dir/BSTSG.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/c/Users/sebas/Desktop/Comp ARCH/BST_V1/BSTSG.c" > CMakeFiles/BST_V1.dir/BSTSG.c.i
 
-CMakeFiles/BST_V1.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BST_V1.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/c/Users/sebas/Desktop/Comp ARCH/BST_V1/main.c" -o CMakeFiles/BST_V1.dir/main.c.s
+CMakeFiles/BST_V1.dir/BSTSG.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BST_V1.dir/BSTSG.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/c/Users/sebas/Desktop/Comp ARCH/BST_V1/BSTSG.c" -o CMakeFiles/BST_V1.dir/BSTSG.c.s
 
-CMakeFiles/BST_V1.dir/main.c.o.requires:
+CMakeFiles/BST_V1.dir/BSTSG.c.o.requires:
 
-.PHONY : CMakeFiles/BST_V1.dir/main.c.o.requires
+.PHONY : CMakeFiles/BST_V1.dir/BSTSG.c.o.requires
 
-CMakeFiles/BST_V1.dir/main.c.o.provides: CMakeFiles/BST_V1.dir/main.c.o.requires
-	$(MAKE) -f CMakeFiles/BST_V1.dir/build.make CMakeFiles/BST_V1.dir/main.c.o.provides.build
-.PHONY : CMakeFiles/BST_V1.dir/main.c.o.provides
+CMakeFiles/BST_V1.dir/BSTSG.c.o.provides: CMakeFiles/BST_V1.dir/BSTSG.c.o.requires
+	$(MAKE) -f CMakeFiles/BST_V1.dir/build.make CMakeFiles/BST_V1.dir/BSTSG.c.o.provides.build
+.PHONY : CMakeFiles/BST_V1.dir/BSTSG.c.o.provides
 
-CMakeFiles/BST_V1.dir/main.c.o.provides.build: CMakeFiles/BST_V1.dir/main.c.o
+CMakeFiles/BST_V1.dir/BSTSG.c.o.provides.build: CMakeFiles/BST_V1.dir/BSTSG.c.o
 
 
 # Object files for target BST_V1
 BST_V1_OBJECTS = \
-"CMakeFiles/BST_V1.dir/main.c.o"
+"CMakeFiles/BST_V1.dir/BSTSG.c.o"
 
 # External object files for target BST_V1
 BST_V1_EXTERNAL_OBJECTS =
 
-BST_V1.exe: CMakeFiles/BST_V1.dir/main.c.o
+BST_V1.exe: CMakeFiles/BST_V1.dir/BSTSG.c.o
 BST_V1.exe: CMakeFiles/BST_V1.dir/build.make
 BST_V1.exe: CMakeFiles/BST_V1.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/sebas/Desktop/Comp ARCH/BST_V1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable BST_V1.exe"
@@ -99,7 +99,7 @@ CMakeFiles/BST_V1.dir/build: BST_V1.exe
 
 .PHONY : CMakeFiles/BST_V1.dir/build
 
-CMakeFiles/BST_V1.dir/requires: CMakeFiles/BST_V1.dir/main.c.o.requires
+CMakeFiles/BST_V1.dir/requires: CMakeFiles/BST_V1.dir/BSTSG.c.o.requires
 
 .PHONY : CMakeFiles/BST_V1.dir/requires
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/cygdrive/c/Users/sebas/Desktop/Comp ARCH/BST_V1/main.c" "/cygdrive/c/Users/sebas/Desktop/Comp ARCH/BST_V1/cmake-build-debug/CMakeFiles/BST_V1.dir/main.c.o"
+  "/cygdrive/c/Users/sebas/Desktop/Comp ARCH/BST_V1/BSTSG.c" "/cygdrive/c/Users/sebas/Desktop/Comp ARCH/BST_V1/cmake-build-debug/CMakeFiles/BST_V1.dir/BSTSG.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

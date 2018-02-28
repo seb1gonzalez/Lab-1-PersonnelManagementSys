@@ -123,32 +123,32 @@ BST_V1/fast:
 	$(MAKE) -f CMakeFiles/BST_V1.dir/build.make CMakeFiles/BST_V1.dir/build
 .PHONY : BST_V1/fast
 
-main.o: main.c.o
+BSTSG.o: BSTSG.c.o
 
-.PHONY : main.o
+.PHONY : BSTSG.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/BST_V1.dir/build.make CMakeFiles/BST_V1.dir/main.c.o
-.PHONY : main.c.o
+BSTSG.c.o:
+	$(MAKE) -f CMakeFiles/BST_V1.dir/build.make CMakeFiles/BST_V1.dir/BSTSG.c.o
+.PHONY : BSTSG.c.o
 
-main.i: main.c.i
+BSTSG.i: BSTSG.c.i
 
-.PHONY : main.i
+.PHONY : BSTSG.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/BST_V1.dir/build.make CMakeFiles/BST_V1.dir/main.c.i
-.PHONY : main.c.i
+BSTSG.c.i:
+	$(MAKE) -f CMakeFiles/BST_V1.dir/build.make CMakeFiles/BST_V1.dir/BSTSG.c.i
+.PHONY : BSTSG.c.i
 
-main.s: main.c.s
+BSTSG.s: BSTSG.c.s
 
-.PHONY : main.s
+.PHONY : BSTSG.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/BST_V1.dir/build.make CMakeFiles/BST_V1.dir/main.c.s
-.PHONY : main.c.s
+BSTSG.c.s:
+	$(MAKE) -f CMakeFiles/BST_V1.dir/build.make CMakeFiles/BST_V1.dir/BSTSG.c.s
+.PHONY : BSTSG.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BST_V1"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... BSTSG.o"
+	@echo "... BSTSG.i"
+	@echo "... BSTSG.s"
 .PHONY : help
 
 

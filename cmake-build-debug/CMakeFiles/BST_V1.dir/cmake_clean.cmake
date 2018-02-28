@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/BST_V1.dir/main.c.o"
+  "CMakeFiles/BST_V1.dir/BSTSG.c.o"
   "BST_V1.pdb"
   "BST_V1.exe"
   "libBST_V1.dll.a"

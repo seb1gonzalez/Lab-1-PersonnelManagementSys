@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/sebas/Desktop/Comp ARCH/BST_V1/main.c
+/cygdrive/c/Users/sebas/Desktop/Comp ARCH/BST_V1/BSTSG.c
 stdio.h
 -
 malloc.h

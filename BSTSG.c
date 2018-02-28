@@ -7,6 +7,8 @@
 #include <malloc.h>
 #include <stdlib.h>
 
+
+
 //FUNCTIONS IN BST
 
 
@@ -26,13 +28,33 @@ struct Node* newNode(int newVal){
     return newNode;
 
 };
+//print elements in tree from smallest to largest
 void inOrder(struct Node* root){
     if(root != NULL){
         inOrder(root->left);
-        printf("%d ",root->value);
+        printf("%d \n",root->value);
         inOrder(root->right);
     }
 };
+
+//iterative search function
+void search(struct Node* root,int target){
+while(root != NULL){
+    if (target == root->value) {
+        printf("Value %i is in the tree \n", target);
+        return;
+    }
+    if(target < root->value){
+        root = root->left;
+    }
+    if(target > root->value){
+        root = root->right;
+    }
+}
+    printf("Value %i not found\n",target);
+
+};
+
 
 // add an element to the Tree
 struct Node* add (struct Node* root, int value){
@@ -58,7 +80,6 @@ struct Node* add (struct Node* root, int value){
 };
 
 
-
 //MAIN
 int main() {
 
@@ -68,10 +89,23 @@ int main() {
     //start adding elements to tree using ADD function
 
     root = add(root,40);
-    for(int i = 10 ; i < 110; i+=10) {
+    for(int i = 10 ; i < 50; i+=5) {
         add(root, i);
     }
 
     inOrder(root);
+
+    search(root,45);
     return 0;
 }
+/* OUTPUT
+*10
+*15
+*20
+*25
+*30
+*35
+*40
+*45
+*Value 45 is in the tree
+*/

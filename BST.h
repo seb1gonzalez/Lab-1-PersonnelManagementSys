@@ -1,5 +1,12 @@
+#include <stdio.h>
+#include <string.h>
+
+/*Sebastian Gonzalez 2018
+This is a Binary Searh Tree that reads "strings".
+*/
+
 typedef struct Node {
-  int value;
+  char *word;
   struct Node *right;
   struct Node *left;
 } Node;
@@ -17,46 +24,57 @@ struct Node* newNode(int newVal){
 void inOrder(struct Node* root){
   if(root != NULL){
     inOrder(root->left);
-    printf("%d \n",root->value);
+    printf("%s \n",root->value);
     inOrder(root->right);
   }
 };
 
 //iterative search function
-void search(struct Node* root,int target){
+void search(struct Node* root,char* target){
   while(root != NULL){
-    if (target == root->value) {
-      printf("Value %i is in the tree \n", target);
+    if (strcmp(target,root->value) == 0) {
+      printf("Value %s is in the tree \n", target);
       return;
     }
-    if(target < root->value){
+    //if target is less than the root, search left subtree
+    if(strcmp(target,root->value) < 0){
       root = root->left;
     }
-    if(target > root->value){
+    //if target is greater than root's value, check right subArbol
+    if(strcmp(target, root->value) > 0){
       root = root->right;
     }
   }
-  printf("Value %i not found\n",target);
+  printf("Sorry, value %s not found\n",target);
 
 };
+
 // add an element to the Tree
-struct Node* add (struct Node* root, int value){
+struct Node* add (struct Node* root, char *value){
   //check ifEmpty
   if (root == NULL){
     root = newNode(value);
   }
 
   //add left if less than
-  else if(value < root->value){
+  else if(strcmp(value,root->value) < 0){
+
     root->left = add(root->left,value);
+
   }
 
   //do nothing for duplicates
-  else if(root->value == value){}
+  else if(strcmp(value,root->value) == 0){
+
+    printf("This person is already on the list.-> %s \n",value);
+
+}
 
   //add right if greater
   else{
+
     root->right = add(root->right,value);
+
   }
 
   return root;

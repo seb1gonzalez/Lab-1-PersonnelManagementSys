@@ -1,5 +1,5 @@
 //CREATED BY SEBASTIAN GONZALEZ FEB 25,2018
-//time invested 2 hours, research www.tutorialspoint.com -> pointers, malloc, linked list
+//time invested 8 hours, research www.tutorialspoint.com -> pointers, malloc, linked list
 // other resources JAVA BST, JAVA LinkedList
 
 void displayOptions(){

@@ -1,18 +1,12 @@
 #include <stdio.h>
 
 #include <malloc.h>
-
 #include <string.h>
 
 
 
 /*Sebastian Gonzalez 2018
-
-
-
  */
-
-
 
 typedef struct Node{
 
@@ -53,7 +47,6 @@ void inOrder(struct Node* root){
     inOrder(root->left);
 
     printf("%s \n",root->value);
-
     inOrder(root->right);
 
   }
@@ -69,7 +62,6 @@ void search(struct Node* root,char target[]){
   while(root != NULL){
 
     if (strcmp(target,root->value) == 0) {
-
       printf("Value %s is in the tree \n", target);
 
       return;
@@ -101,40 +93,7 @@ void search(struct Node* root,char target[]){
 };
 
 
-
-// add an element to the Tree
-
-struct Node* remove (struct Node* root, char value[]) {
-
-  while(root != NULL){
-
-    if (strcmp(target,root->value) == 0) {
-
-      free(root);
-
-      return;
-
-    }
-
-    //if target is less than the root, search left subtree
-
-    if(strcmp(target,root->value) < 0){
-
-      root = root->left;
-
-    }
-
-    //if target is greater than root's value, check right subTree
-
-    if(strcmp(target, root->value) > 0){
-
-      root = root->right;
-
-    }
-
-  };
-
-  struct Node* add (struct Node* root, char value[]){
+struct Node* add (struct Node* root, char value[]){
 
     //check ifEmpty
 
@@ -150,12 +109,7 @@ struct Node* remove (struct Node* root, char value[]) {
 
     else if(strcmp(value,root->value) < 0){
 
-
-
       root->left = add(root->left,value);
-
-
-
     }
 
 
@@ -168,8 +122,6 @@ struct Node* remove (struct Node* root, char value[]) {
 
       printf("This person is already on the list.-> %s \n",value);
 
-
-
     }
 
 
@@ -178,11 +130,7 @@ struct Node* remove (struct Node* root, char value[]) {
 
     else{
 
-
-
       root->right = add(root->right,value);
-
-
 
     }
 

@@ -2,7 +2,7 @@
 #include<string.h>
 #include "BST.h"
 
-void readMyFile(char* theFileName){
+void readMyFile(char theFileName[]){
   //Create a file pointer
 FILE *file;
 
@@ -12,10 +12,13 @@ char fullName[16];
 char* fullNameptr;
 fullNameptr = fullName;
 file=fopen(theFileName,"r");
- while(2 == fscanf(theFileName, "%s %s", fname, lname))
-   {
- fullName = strcat(fname,lname);
-     add(root,fullNameptr);
+//while there is 2 strings to read
+
+ while(2 == fscanf(theFileName, "%s %s", fname, lname)){
+   //concatenate the name
+   fullName = strcat(fname,lname);
+   add(root,fullNameptr);
 
    }
-fclose(file);
+ fclose(file);
+}

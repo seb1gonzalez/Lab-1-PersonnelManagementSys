@@ -6,13 +6,13 @@ This is a Binary Searh Tree that reads "strings".
 */
 
 typedef struct Node {
-  char *word;
+  char word[];
   struct Node *right;
   struct Node *left;
 } Node;
 
 //function to create a Node for the BST
-struct Node* newNode(int newVal){
+struct Node* newNode(char newVa[]l){
   Node *newNode= (Node*)malloc(sizeof(Node));
   newNode->value = newVal;
   newNode->left = NULL;
@@ -30,7 +30,7 @@ void inOrder(struct Node* root){
 };
 
 //iterative search function
-void search(struct Node* root,char* target){
+void search(struct Node* root,char target[]){
   while(root != NULL){
     if (strcmp(target,root->value) == 0) {
       printf("Value %s is in the tree \n", target);
@@ -50,7 +50,7 @@ void search(struct Node* root,char* target){
 };
 
 // add an element to the Tree
-struct Node* add (struct Node* root, char *value){
+struct Node* add (struct Node* root, char value[]){
   //check ifEmpty
   if (root == NULL){
     root = newNode(value);

@@ -1,9 +1,9 @@
-all: tree.out
-	echo "Completed Compilation, Welcome Neo"
-tree.out:BSTSG.o
+all: EmployeeList
+
+EmployeeList:BSTSG.o
 	gcc BSTSG.o
 
-BSTSG.o: BSTSG.c BST.h
+BSTSG.o: BSTSG.c BST.h fileOperations.h
 	gcc -c BSTSG.c
 clean:
-	rm -f *.o tree.out
+	rm -f *.o EmployeeList

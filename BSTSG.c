@@ -1,9 +1,10 @@
 //CREATED BY SEBASTIAN GONZALEZ FEB 25,2018
-//time invested 2 hours, research www.tutorialspoint.com -> pointers, malloc, linked list
+//time invested 8 hours, research www.tutorialspoint.com -> pointers, malloc, linked list, File I/O, string.h.
 // other resources JAVA BST, JAVA LinkedList
 
 
 #include <stdio.h>
+#include <string.h>
 #include <malloc.h>
 #include "BST.h"
 #include "fileOperations.h"
@@ -16,15 +17,8 @@ int main() {
     //make BS treeRoot empty or Null
     Node *root = NULL;
 
-    //start adding elements to tree using ADD function
-
-    root = add(root,40);
-    for(int i = 10 ; i < 50; i+=5) {
-        add(root, i);
-    }
-
-    inOrder(root);
-
-    search(root,45);
+    //start adding elements to tree using file functions
+    char inputFile[] = "employeeList.txt";
+    readMyFile(inputFile);
     return 0;
 }
